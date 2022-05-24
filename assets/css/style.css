@@ -1,0 +1,225 @@
+:root {
+  --primary: #1da1f2;
+  --bg-body: #fff;
+  --text-color: #333333;
+  --border-color: #e7ecf0;
+  --span-color: #828282;
+  --h2-color: #000;
+}
+
+.dark-mode:root {
+  --primary: #1da1f2;
+  --bg-body: #0B0A0A;
+  --text-color: #E7E9EA;
+  --border-color: rgb(47 51 54);
+  --span-color: #71767b; 
+  --h2-color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+  background-color: var(--bg-body);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* CABEÇALHO */
+.header {
+  flex-basis: 30%;
+}
+
+.header__logo {
+  margin-bottom: 40px;
+}
+
+.header__logo img:hover {
+  transform: scale(1.08);
+  transition: 0.3s ease-out;
+}
+
+.header__logo figcaption {
+  display: none;
+}
+
+.header__item {
+  margin-bottom: 40px;
+}
+
+.header__item img {
+  max-width: 26px;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.header__item h3 {
+  display: inline;
+}
+
+.item__profile {
+  border-radius: 50%;
+}
+
+.header__item a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.375rem;
+  font-weight: 700;
+  transition: 0.1s ease-out;
+}
+
+.header__item a:hover {
+  color: var(--primary);
+  transition: 0.1s ease-out;
+}
+
+.item__switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.item__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.item__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.item__slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.3em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background: linear-gradient(40deg, #6dd5ed, var(--primary) 70%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .item__slider {
+  background-color: #303136;
+}
+
+input:checked + .item__slider:before {
+  -webkit-transform: translateX(1.5em);
+  -ms-transform: translateX(1.5em);
+  transform: translateX(1.5em);
+  background: #303136;
+  -webkit-box-shadow: inset -3px -2px 5px -2px #8983f7,
+    inset -10px -5px 0 0 #a3dafb;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.contentPrimary {
+  flex-basis: 70%;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.contentPrimary__title {
+  padding: 10px 30px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.375rem;
+}
+
+.contentPrimary__form {
+  padding: 10px 30px;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 10px solid var(--border-color);
+  text-align: right;
+}
+
+.contentPrimary__form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 55px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-color);
+}
+
+.contentPrimary__form button {
+  background-color: var(--primary);
+  opacity: 0.4;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.1s ease-out;
+}
+
+.contentPrimary__form button:hover {
+  opacity: 0.7;
+  transition: 0.1s ease-out;
+}
+
+.contentPrimary__listTweet {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+.contentPrimary__tweet {
+  padding: 20px 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tweet__ProfilePic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tweet__content h2 {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--h2-color);
+}
+
+.tweet__content span {
+  display: inline-block;
+  color: var(--span-color);
+}
+
+.tweet__content p {
+  margin-top: 15px;
+  color: var(--text-color);
+  line-height: 1.4rem;
+}
+
+.content__verified {
+  width: 15px;
+}

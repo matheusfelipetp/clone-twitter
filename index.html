@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/img/bird 1.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <title>Clone Twitter</title>
+</head>
+
+<body class="dark-mode">
+  <div class="container">
+    <header class="header">
+        <figure class="header__logo">
+          <a href="">
+            <img src="assets/img/bird 1.svg" alt="Logo Clone Twitter">
+          </a>
+          <figcaption hidden>Logo Clone Twitter</figcaption>
+        </figure>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="">
+              <img src="assets/img/Home.png" alt="Home Page">
+              <h3>Página Inicial</h3>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#">
+              <img src="assets/img/Hashtag.png" alt="Explorer Page">
+              <h3>Explorar</h3>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#">
+              <img src="assets/img/Notification.png" alt="Notification">
+              <h3>Notificações</h3>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#">
+              <img src="assets/img/Group.png" alt="Message">
+              <h3>Mensagens</h3>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#">
+              <img src="assets/img/Group (1).png" alt="Item saves">
+              <h3>Itens Salvos</h3>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#">
+              <img src="assets/img/Group (2).png" alt="List">
+              <h3>Listas</h3>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#">
+              <img class="item__profile" src="assets/img/ProfilePic.png" alt="Profile">
+              <h3>Perfil</h3>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#">
+              <img src="assets/img/Group (3).png" alt="More">
+              <h3>Mais</h3>
+            </a>
+          </li>
+          <li>
+            <label class="item__switch">
+              <input type="checkbox" id="switch">
+              <span class="item__slider"></span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contentPrimary">
+      <h3 class="contentPrimary__title">Feed</h3>
+
+      <form action="#" class="contentPrimary__form">
+        <textarea name="textTweet" id="textTweet" placeholder="O que está acontecendo?" required></textarea>
+        <button type="submit" id="button" disabled>Tweetar</button>
+      </form>
+
+      <section class="contentPrimary__feed">
+        <ul class="contentPrimary__listTweet">
+          <li class="contentPrimary__tweet">
+            <img class="tweet__ProfilePic" src="assets/img/logoKenzie.jpg" alt="Profile Pic">
+            <div class="tweet__content">
+              <h2>Kenzie Academy Brasil</h2>
+              <img class="content__verified" src="assets/img/verificado.png" alt="Verificado">
+              <span>@kenzieacademy - 2 h</span>
+              <p>Metodologia do Vale do Silício. Em 12 meses, você aprende as principais linguagens do mercado para aprender a programar de verdade. Mesmo sem conhecimento prévio ou recursos para investir. Vem estudar com a gente!</p>
+            </div>
+          </li>
+          <li class="contentPrimary__tweet">
+            <img class="tweet__ProfilePic" src="assets/img/ProfilePic.png" alt="Profile Pic">
+            <div class="tweet__content">
+              <h2>Matheus Felipe</h2>
+              <span>@matheusfelipetp - 2 h</span>
+              <p>Mais um dia de estudos concluído. O projeto de hoje foi criar um clone do Twitter e utilizar o JavaScript para criar novos tweets. Foi incrível!</p>
+            </div>
+          </li>
+          <li class="contentPrimary__tweet">
+            <img class="tweet__ProfilePic" src="assets/img/ProfilePic (1).png" alt="Profile Pic">
+            <div class="tweet__content">
+              <h2>G1 Notícias</h2>
+              <img class="content__verified" src="assets/img/verificado.png" alt="Verificado">
+              <span>@g1 - 1 h</span>
+              <p>Carreira em TI: como passar a ganhar mais?
+                Investir em habilidades que vão além do conhecimento técnico, como comunicação, liderança e visão de negócios faz diferença. Ainda é possível trabalhar no exterior.</p>
+            </div>
+          </li>
+          <li class="contentPrimary__tweet">
+            <img class="tweet__ProfilePic" src="assets/img/ProfilePic (2).png" alt="Profile Pic">
+            <div class="tweet__content">
+              <h2>Matheus Ribeiro</h2>
+              <span>@matheusribeiro - 30 min</span>
+              <p>Seguimos firmes na luta...&#128531</p>
+            </div>
+          </li>
+          <li class="contentPrimary__tweet">
+            <img class="tweet__ProfilePic" src="assets/img/Shayany.jpg" alt="Profile Pic">
+            <div class="tweet__content">
+              <h2>Shayany Brasil</h2>
+              <span>@shayanybrasil - 18 min</span>
+              <p>Que notícia maravilhosa! Fui aprovada no exame da Ordem!!! &#128591&#128516</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>

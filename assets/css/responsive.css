@@ -1,0 +1,122 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-basis: 10%;
+  }
+  .header__logo {
+    margin-left: 25px;
+  }
+  .header__item {
+    margin-left: 25px;
+  }
+  .header__item h3 {
+    display: none;
+  }
+  .contentPrimary {
+    flex-basis: 90%;
+  }
+  .contentPrimary__tweet {
+    padding: 20px 15px;
+  }
+  .tweet__content span {
+    display:block;
+    margin-top: 5px;
+  }
+  .item__switch {
+    font-size: 14px;
+    margin-left: 13px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header__logo {
+    margin-left: 18px;
+  }
+  .header__item {
+    margin-left: 18px;
+  }
+  .header__logo img {
+    max-width: 20px;
+  }
+  .header__item img {
+    max-width: 20px; 
+  }
+  .contentPrimary__form button {
+    padding: 10px 15px;
+  }
+  .tweet__ProfilePic {
+    width: 30px;
+    height: 30px;
+  }
+  .item__switch {
+    font-size: 8px;
+    margin-left: 14px;
+  }
+}
+
+@media (max-width:400px) {
+  .header {
+    flex-basis: 5%;
+  }
+  .header__logo {
+    margin-left: 20px;
+  }
+  .header__item {
+    margin-left: 20px;
+  }
+  .contentPrimary {
+    flex-basis: 95%;
+  }
+  .contentPrimary__tweet {
+    padding: 20px 15px;
+  }
+  .tweet__content p {
+    font-size: 14px;
+  }
+  .tweet__content span {
+    font-size: 14px;
+  }
+  .tweet__content h2 {
+    font-size: 15px;
+  }
+  .contentPrimary__form textarea {
+    font-size: 14px;
+  }
+  .contentPrimary__form button {
+    padding: 8px 10px;
+  }
+  .item__switch {
+    font-size: 8px;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 280px) {
+  .header__logo img {
+    max-width: 15px;
+  }
+  .header__item img {
+    max-width: 16px; 
+  }
+  .header__logo {
+    margin-left: 15px;
+  }
+  .header__item {
+    margin-left: 15px;
+  }
+  .item__switch {
+    font-size: 8px;
+    margin-left: 10px;
+  }
+}
