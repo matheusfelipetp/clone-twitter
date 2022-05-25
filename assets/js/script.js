@@ -7,7 +7,12 @@ function catchTweet(event) {
   event.preventDefault();
 
   const tweetTextarea = textarea.value;
-  createTweet(tweetTextarea);
+
+  if (textarea.value !== "") {
+    createTweet(tweetTextarea);
+  } else {
+    return false;
+  }
 }
 
 tweetar.addEventListener("click", catchTweet);
